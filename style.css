@@ -1,0 +1,188 @@
+/* বেসিক রিসেট */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* হালকা ধূসর ব্যাকগ্রাউন্ড */
+    color: #333;
+}
+
+/* হেডার স্টাইল */
+.header {
+    background-color: #2c3e50; /* গাঢ় নীল */
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.header nav ul li a:hover {
+    background-color: #34495e; /* হোভার ইফেক্ট */
+}
+
+/* হিরো সেকশন স্টাইল */
+.hero-section {
+    background: url('[attachment_0](attachment)') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* টেক্সটে শ্যাডো */
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background-color: #e74c3c; /* লাল */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #c0392b;
+}
+
+/* বৈশিষ্ট্যযুক্ত প্রোডাক্টস সেকশন */
+.featured-products {
+    padding: 2rem;
+    text-align: center;
+}
+
+.featured-products h2 {
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* রেসপনসিভ গ্রিড */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-item {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+/* Product Item-এর ভেতরের ছবির স্টাইল (style.css) */
+.product-item img {
+    /* ছবিটি যেন কন্টেইনারের প্রস্থের (width) সমান হয় */
+    width: 100%; 
+    
+    /* ছবিটি যেন তার রেশিও ঠিক রাখে */
+    height: auto; 
+    
+    /* ছবির একটি নির্দিষ্ট উচ্চতা সেট করা, যাতে ডিজাইন ঠিক থাকে */
+    max-height: 200px; 
+    
+    /* যদি ছবির রেশিও কন্টেইনারের সাথে না মেলে, তবে ছবিটি ক্রপ হবে কিন্তু পুরোপুরি দেখা যাবে */
+    object-fit: cover; 
+    
+    /* নিচের কোডগুলো আপনি আগেই যোগ করেছিলেন, এগুলো রাখাও ভালো */
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+
+.product-item:hover {
+    transform: translateY(-5px); /* হোভারে উপরে ওঠা */
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.product-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #3498db; /* নীল */
+}
+
+.product-item .price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #27ae60; /* সবুজ */
+    margin-bottom: 1rem;
+}
+
+.add-to-cart {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #2980b9;
+}
+
+/* ফুটার স্টাইল */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.footer-links a {
+    color: #f1c40f; /* হলুদ */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* অন্যান্য পেজগুলির জন্য: `products.html`, `cart.html`, `contact.html` ফাইল তৈরি করে এই CSS ব্যবহার করতে পারেন, শুধু <section> অংশের কন্টেন্ট পাল্টাতে হবে। */

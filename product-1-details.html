@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>প্রোডাক্ট ১ - বিস্তারিত</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* এই পেজের জন্য কিছু অতিরিক্ত স্টাইল, যদি লাগে */
+        .product-detail-container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            gap: 30px;
+        }
+        .detail-image {
+            flex: 1;
+        }
+        .detail-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .detail-info {
+            flex: 2;
+        }
+        .detail-info h1 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        .detail-info .description {
+            margin: 20px 0;
+            line-height: 1.8;
+        }
+        .detail-info .price-large {
+            font-size: 2rem;
+            color: #e74c3c;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">র‍্যান্ডম শপ</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">হোম</a></li>
+                <li><a href="products.html">প্রোডাক্টস</a></li>
+                <li><a href="cart.html">কার্ট</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-detail-container">
+        <div class="detail-image">
+            <img src="" alt="প্রোডাক্ট ১">
+        </div>
+        <div class="detail-info">
+            <h1>প্রোডাক্ট ১ - দারুণ একটি গ্যাজেট</h1>
+            <p class="price-large">৳ ৫০০</p>
+            
+            <h3>প্রোডাক্টের বিবরণ:</h3>
+            <p class="description">
+                এটি একটি চমৎকার গ্যাজেট যা আপনার দৈনন্দিন জীবনকে অনেক সহজ করে তুলবে। 
+                এর উন্নত বৈশিষ্ট্য এবং আকর্ষণীয় ডিজাইন এটিকে বাজারের সেরা প্রোডাক্টগুলোর মধ্যে একটি করে তুলেছে।
+                দ্রুত ডেলিভারি এবং সেরা গ্রাহক সেবা সহ এখনই অর্ডার করুন।
+            </p>
+            
+            <h3>গুরুত্বপূর্ণ বৈশিষ্ট্য:</h3>
+            <ul>
+                <li>উচ্চ গুণমানের মেটেরিয়াল</li>
+                <li>দীর্ঘস্থায়ী ব্যাটারি লাইফ</li>
+                <li>সহজে বহনযোগ্য</li>
+                <li>এক বছরের ওয়ারেন্টি</li>
+            </ul>
+            
+            <button class="add-to-cart cta-button" style="background-color: #27ae60; margin-top: 20px;">কার্টে যোগ করুন (কিনুন)</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; ২০২৫ র‍্যান্ডম শপ।</p>
+    </footer>
+
+</body>
+</html>
